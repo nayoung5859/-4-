@@ -3,19 +3,33 @@
     <!-- 스타일 꾸미는 방법2 -->
     <style>
         h1{
-            border:5px solid blue;
-            background-color: green;
+            border:5px solid rgb(240, 105, 206);
+            background-color: rgb(204, 220, 245);
         }
     </style>
     <body>
         <!-- 컨트롤 + / 하면 주석처리 -->
         <!-- 스타일 꾸미는 방법1 -->
         <!-- <h1 style="border:5px solid red; background-color:aquamarine;">WEB</h1> -->
+        <input type="button" value="night" onclick="
+            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('body').style.color='white';
+            document.querySelector('#a1').style.color='white'
+            document.querySelector('#a2').style.color='white'
+            document.querySelector('#a3').style.color='white'
+        ">
+        <input type="button" value="day" onclick="
+            document.querySelector('body').style.backgroundColor='white';
+            document.querySelector('body').style.color='black'
+            document.querySelector('#a1').style.color='black'
+            document.querySelector('#a2').style.color='black'
+            document.querySelector('#a3').style.color='black'
+        ">
         <h1>web</h1>
         <ol>
-            <li>html</li>
-            <li>css</li>
-            <li>js</li>
+            <li><a href="1.html" id="a1">html</a></li>
+            <li><a href="2.css" id = "a2">css</a></li>
+            <li><a href="3.js" id="a3">js</a></li>
         </ol>
         WEB is Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum necessitatibus sit odio doloribus molestias rerum? Reiciendis odio, alias optio quo accusantium ducimus, eum doloremque eveniet necessitatibus architecto corporis nesciunt quas.
     </body>
